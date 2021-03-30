@@ -25,7 +25,7 @@
 ## Overview
 
 _**Striva** is an app striving to be strava, get it? Striva! Social media meets fitness in this app.  Share your activities with friends and see what they've been up to as well!_
-
+_**Striva** and Striva strives to be strava! Let be better, together!_
 
 <br>
 
@@ -52,10 +52,10 @@ _**Striva** is an app striving to be strava, get it? Striva! Social media meets 
 - Deployment
   - Fully functioning deployed front-end
   - Fully functioning deployed back-end via Heroku
-  
+
 <br>
 
-### Goals
+### Goals ??
 
 - _Lorem ipsum, dolor sit amet,_
 - _consectetur adipiscing elit._
@@ -85,29 +85,8 @@ _**Striva** is an app striving to be strava, get it? Striva! Social media meets 
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-![Dummy Link](url)
+![https://www.figma.com/file/WfBt6ZSacRgbctWnuDn0Mw/Striva?node-id=0%3A1](url)
 
-- Desktop Landing
-
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Tree
 
@@ -139,9 +118,9 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Rails backend     |    H     |     5 hrs      |      hrs     |     hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |      hrs     |     TBD     |
+| TOTAL               |          |     6 hrs      |      hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
@@ -160,7 +139,9 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+- Allow for users to make comments on others posts 
+- Implement a 'like' or 'kudos' button
+- Implement a map in some capacity
 
 ***
 
