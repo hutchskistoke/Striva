@@ -121,8 +121,7 @@ src
 
 #### ERD Model
 
-[Imgur](https://i.imgur.com/oe59MyG.png)
-[ERD](https://drive.google.com/file/d/1mEX-l0glBkZSA0zWYLgYMxIKO1dBCc52/view?usp=sharing)
+![Imgur](https://i.imgur.com/oe59MyG.png)
 <br>
 
 ***
