@@ -25,7 +25,6 @@
 ## Overview
 
 _**Striva** is an app striving to be strava, get it? Striva! Social media meets fitness in this app.  Share your activities with friends and see what they've been up to as well!_
-_**Striva** and Striva strives to be strava! Let be better, together!_
 
 <br>
 
@@ -55,15 +54,6 @@ _**Striva** and Striva strives to be strava! Let be better, together!_
 
 <br>
 
-### Goals ??
-
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
-
-<br>
 
 ### Libraries and Dependencies
 
@@ -131,9 +121,8 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
-
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+[Imgur](https://i.imgur.com/oe59MyG.png)
+[ERD](https://drive.google.com/file/d/1mEX-l0glBkZSA0zWYLgYMxIKO1dBCc52/view?usp=sharing)
 <br>
 
 ***
