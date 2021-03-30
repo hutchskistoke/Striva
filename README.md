@@ -85,7 +85,7 @@ _**Striva** and Striva strives to be strava! Let be better, together!_
 
 > Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
 
-[Imgur](https://i.imgur.com/b3HAcy6.png)
+(https://i.imgur.com/b3HAcy6.png)
 
 
 #### Component Tree
