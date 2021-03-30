@@ -31,10 +31,28 @@ _**Striva** is an app striving to be strava, get it? Striva! Social media meets 
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
+- Back End
+  - Build a Ruby on Rails server
+  - utilize RESTful JSON endpoints
+  - Incorporate at least 1 association
+  - Full CRUD functionality 
+  - Incorporate user authentication
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+- Front End
+  - Built with React
+  - Consume from my Ruby on Rails API 
+  - Render data using functional and class React components
+  - Utilize React Router for client side routing
+  - Full CRUD functionality 
 
+- Styling
+  - Styled with CSS
+  - Implementation of at least 2 media queries
+
+- Deployment
+  - Fully functioning deployed front-end
+  - Fully functioning deployed back-end via Heroku
+  
 <br>
 
 ### Goals
