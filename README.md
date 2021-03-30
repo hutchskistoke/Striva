@@ -83,8 +83,7 @@ _**Striva** and Striva strives to be strava! Let be better, together!_
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
+[figma](https://www.figma.com/proto/WfBt6ZSacRgbctWnuDn0Mw/Striva?node-id=5%3A5&scaling=scale-down&page-id=0%3A1 "View Figma Protoype")
 ![imgur](https://i.imgur.com/b3HAcy6.png)
 
 
