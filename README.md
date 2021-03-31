@@ -73,7 +73,7 @@ _**Striva** is an app striving to be strava, get it? Striva! Social media meets 
 
 #### Component Tree
 
-![Component Tree Sample](https://i.imgur.com/bqKc0ap.png)
+![Component Tree Sample](https://i.imgur.com/D0ZnyH4.jpg)
 
 #### Component Architecture
 
