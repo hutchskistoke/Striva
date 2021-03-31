@@ -53,7 +53,7 @@ _**Striva** is an app striving to be strava, get it? Striva! Social media meets 
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _npm i_ |
+|      React       | _npm i react_ |
 |   React Router   | _npm i react-router-dom_ |
 |     Axios        | _npm i axios_ |
 |     JWT          | _gem 'jwt'_ |
@@ -121,7 +121,7 @@ src
 | Services files |    H     |     6 hrs      |      hrs     |     TBD     |
 | Front end CRUD     |    H     |     6 hrs      |      hrs     |     TBD   |
 | Debugging |    H     |     4 hrs      |      hrs     |     TBD     |
-| CSS               |          |     12 hrs      |      hrs     |     TBD     |
+| CSS               |      H    |     12 hrs      |      hrs     |     TBD     |
 | TOTAL               |          |     52 hrs      |      hrs     |     TBD     |
 
 
