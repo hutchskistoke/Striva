@@ -1,10 +1,5 @@
 # Striva
 
-
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Goals](#goals)
@@ -61,11 +56,11 @@ _**Striva** is an app striving to be strava, get it? Striva! Social media meets 
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _npm i_ |
+|   React Router   | _npm i react-router-dom_ |
+|     Axios        | _npm i axios_ |
+|     JWT          | _gem 'jwt'_ |
+|     Bcrypt       | _gem 'bcrypt'_ |
 
 <br>
 
@@ -87,19 +82,32 @@ _**Striva** is an app striving to be strava, get it? Striva! Social media meets 
 
 #### Component Architecture
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
+|__ containers/
+      |__ MainContainer
+|__ screens/
+      |__ Home
+      |__ Feed
+      |__ YourFeed
+      |__ Details
+      |__ CreateActivity
+      |__ Login
+      |__ Register
+      |__ EditActivity
 |__ components/
-      |__ Header.jsx
+      |__ KudosButton
+      |__ CommentButton
+      |__ EditButton
+      |__ DeleteButton 
 |__ services/
+      |__ api-config
+      |__ auth
+      |__ users
+      |__ posts
+      |__ comments
+|__ layout/
 
 ```
 
@@ -109,11 +117,18 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Rails backend     |    H     |     5 hrs      |      hrs     |     hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |      hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |      hrs     |     TBD     |
+| Rails backend     |    H     |     5 hrs      |      hrs     |     TBD   |
+| Create CRUD Actions |    H     |     6 hrs      |      hrs     |     TBD     |
+| Seed Data     |    H     |     2 hrs      |      hrs     |     TBD   |
+| Migrations and Schema |    H     |     1 hrs      |      hrs     |     TBD     |
+| Create CRUD Actions |    H     |     6 hrs      |      hrs     |     TBD     |
+| Routes   |    H     |     4 hrs      |      hrs     |     TBD   |
+| Services files |    H     |     6 hrs      |      hrs     |     TBD     |
+| Front end CRUD     |    H     |     6 hrs      |      hrs     |     TBD   |
+| Debugging |    H     |     4 hrs      |      hrs     |     TBD     |
+| CSS               |          |     12 hrs      |      hrs     |     TBD     |
+| TOTAL               |          |     52 hrs      |      hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -136,8 +151,8 @@ src
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> Pending
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> Pending
