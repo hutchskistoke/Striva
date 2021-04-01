@@ -1,12 +1,21 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :update, :destroy]
+  before_action :authorize_request, except: :login
 
   # GET /posts
+  # http://localhost:3000/users/15/posts >>below index shows just posts for user 15 
   def index
+    # @user = User.find(params[:user_id])
     @posts = Post.all
 
-    render json: @posts
+    render json: @posts, include: :comments, status: :ok
   end
+
+  def index_user
+    @post = Post.where(user_id: @current_user.id)
+    render json: @post, inlcude: :comments
+  end
+
 
   # GET /posts/1
   def show
@@ -15,6 +24,7 @@ class PostsController < ApplicationController
 
   # POST /posts
   def create
+    @user = User.find(params[:user_id])
     @post = Post.new(post_params)
 
     if @post.save

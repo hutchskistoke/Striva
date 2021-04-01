@@ -1,21 +1,29 @@
 class CommentsController < ApplicationController
   before_action :set_comment, only: [:show, :update, :destroy]
+  before_action :authorize_request, except: :login
 
   # GET /comments
+  # need to revisit comments routes  
   def index
-    @comments = Comment.all
+    @user = User.find(params[:user_id])
+    @posts = Post.find(params[:post_id])
+    @comments = Comment.where(post_id: @post.id)
 
-    render json: @comments
+    render json: @comments, include: :user, include: :post, status: :ok
   end
 
   # GET /comments/1
   def show
+    @comments = Comment.find(params[:id])
     render json: @comment
   end
 
   # POST /comments
   def create
+    @post = Post.find(params[:post_id])
     @comment = Comment.new(comment_params)
+    @comment.post = @post
+    @comment.user = @current_user
 
     if @comment.save
       render json: @comment, status: :created, location: @comment

@@ -9,9 +9,10 @@ class UsersController < ApplicationController
     render json: @users
   end
 
+
   # GET /users/1
   def show
-    render json: @user
+    render json: @user, include: :posts, status: :ok
   end
 
   # POST /users
