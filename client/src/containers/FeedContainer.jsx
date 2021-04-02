@@ -33,6 +33,11 @@ export default function FeedContainer() {
 
   return (
     <Switch>
+      <Route path='/posts/:id'>
+        <PostDetail
+          posts={posts}
+        />
+        </Route>
       
       <Route path='/'>
         <AllPosts
@@ -40,11 +45,6 @@ export default function FeedContainer() {
         />
       </Route>
 
-      {/* <Route path='/posts/:id'>
-        <PostDetail
-          posts={posts}
-        />
-        </Route> */}
     </Switch>
   )
 }
