@@ -3,7 +3,8 @@ import './App.css';
 import Layout from './layout/Layout';
 import Login from './screens/Login';
 import Register from './screens/Register';
-import MainContainer from './containers/MainContainer';
+import FeedContainer from './containers/FeedContainer';
+import YouContainer from './containers/YouContainer';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { loginUser, registerUser, removeToken, verifyUser } from './services/auth';
@@ -47,11 +48,9 @@ function App() {
               handleRegister={handleRegister}
             />
           </Route>
-          <Route path='/'>
-            <MainContainer
-              currentUser={currentUser}
-            />
-          </Route>
+          <Route path='/posts' component={FeedContainer} />
+          {/* <Route path='/dogs' component={YouContainer} /> */}
+          {/* <Route path='/' component={Home} /> */}
         </Switch>
       </Layout>
     </div>

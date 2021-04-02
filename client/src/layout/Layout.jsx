@@ -1,7 +1,8 @@
-import { Link } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
+import AllPosts from '../screens/AllPosts';
 
 export default function Layout(props) {
-  const { currentUser, handleLogout } = props;
+  const { posts, currentUser, handleLogout } = props;
   return (
     <div>
       <header>
@@ -21,13 +22,13 @@ export default function Layout(props) {
         }
       </header>
 
+      {props.children}
       {currentUser && (
         <>
-          <Link to='/posts'>Posts</Link>
-
+          {/* <Link to='/posts'>Posts</Link> */}
+          
         </>
       )}
-      {props.children}
     </div>
   )
 }
