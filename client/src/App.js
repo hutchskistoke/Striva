@@ -48,7 +48,7 @@ function App() {
               handleRegister={handleRegister}
             />
           </Route>
-          <Route path='/posts' component={FeedContainer} />
+          <Route path='/' component={FeedContainer} />
           {/* <Route path='/dogs' component={YouContainer} /> */}
           {/* <Route path='/' component={Home} /> */}
         </Switch>
