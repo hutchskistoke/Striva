@@ -23,12 +23,7 @@ export default function Layout(props) {
       </header>
 
       {props.children}
-      {currentUser && (
-        <>
-          {/* <Link to='/posts'>Posts</Link> */}
-          
-        </>
-      )}
+    
     </div>
   )
 }

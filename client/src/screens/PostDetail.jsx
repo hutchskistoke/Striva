@@ -4,7 +4,7 @@ import {getOnePost} from '../services/posts'
 
 export default function PostDetail(props) {
   const [post, setPost] = useState(null);
-  const { posts, removePost } = props;
+  const { posts, handleDelete } = props;
   const { id } = useParams();
 
   useEffect(() => {
@@ -17,7 +17,7 @@ export default function PostDetail(props) {
   return (
 
     <div className="post-details">
-      <h1>Activity Details</h1>
+      <h1>Activity</h1>
         {
           post &&
           <div className="card">
@@ -30,7 +30,7 @@ export default function PostDetail(props) {
           <br></br>
           <Link to='/posts'>Back</Link>
             <Link to={`/posts/${post.id}/edit`}><button>Edit</button></Link>
-            <button onClick={() => removePost(post.id)}>Delete</button>
+            <button onClick={() => handleDelete(post.id)}>Delete</button>
           </div>
         }
       </div>

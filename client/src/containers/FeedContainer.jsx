@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, Link, useHistory } from 'react-router-dom';
 
 // import services stuffs
-import {getAllPosts, postPost, putPost} from '../services/posts'
+import {getAllPosts, postPost, putPost, destroyPost} from '../services/posts'
 
 // import screens
 import AllPosts from '../screens/AllPosts';
@@ -35,18 +35,12 @@ export default function FeedContainer() {
     }))
     history.push('/posts');
   }
-  
-  
-  // useEffect(() => {
-  //   fetchPosts();
-  // }, [])
-  // const fetchPosts = async () => {
-  //   const posts = await getAllPosts();
-  //   setPosts(posts);
-  // }
-  
 
-  // ! create post button or redirect?
+  const handleDelete = async (id) => {
+    await destroyPost(id);
+    setPosts(prevState => prevState.filter(post => post.id !== id))
+    history.push('/posts');
+  }
 
   return (
     <Switch>
@@ -61,17 +55,12 @@ export default function FeedContainer() {
           handleUpdate={handleUpdate}
         />
       </Route>
-
       <Route path='/posts/:id'>
         <PostDetail
+          handleDelete={handleDelete}
           posts={posts}
         />
       </Route>
-
-
-      
-        
-      
       <Route path='/'>
         <AllPosts
           posts={posts}
