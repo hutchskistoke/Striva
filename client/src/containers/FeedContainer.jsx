@@ -1,15 +1,18 @@
 import { useState, useEffect } from 'react';
-import { Switch, Route, Link } from 'react-router-dom';
+import { Switch, Route, Link, useHistory } from 'react-router-dom';
 
 // import services stuffs
-import {getAllPosts, postPost} from '../services/posts'
+import {getAllPosts, postPost, putPost} from '../services/posts'
 
 // import screens
 import AllPosts from '../screens/AllPosts';
 import PostDetail from '../screens/PostDetail'
+import CreatePost from '../screens/CreatePost'
+import EditPost from '../screens/EditPost'
 
 export default function FeedContainer() {
   const [posts, setPosts] = useState([]);
+  const history = useHistory();
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -18,6 +21,20 @@ export default function FeedContainer() {
     }
     fetchPosts();
   }, [])
+
+  const handleCreate = async (postData) => {
+    const newPost = await postPost(postData);
+    setPosts(prevState => [...prevState, newPost]);
+    history.push('/posts');
+  }
+
+  const handleUpdate = async (id, postData) => {
+    const updatedPost = await putPost(id, postData);
+    setPosts(prevState => prevState.map(post => {
+      return post.id === Number(id) ? updatedPost : post
+    }))
+    history.push('/posts');
+  }
   
   
   // useEffect(() => {
@@ -33,11 +50,27 @@ export default function FeedContainer() {
 
   return (
     <Switch>
+      <Route path='/posts/new'>
+        <CreatePost
+          handleCreate={handleCreate}
+        />
+        </Route>
+      <Route path='/posts/:id/edit'>
+        <EditPost
+          posts={posts}
+          handleUpdate={handleUpdate}
+        />
+      </Route>
+
       <Route path='/posts/:id'>
         <PostDetail
           posts={posts}
         />
-        </Route>
+      </Route>
+
+
+      
+        
       
       <Route path='/'>
         <AllPosts

@@ -17,7 +17,7 @@ export default function PostDetail(props) {
   return (
 
     <div className="post-details">
-      <h1>this is details page</h1>
+      <h1>Activity Details</h1>
         {
           post &&
           <div className="card">

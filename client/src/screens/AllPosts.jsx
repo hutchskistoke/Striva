@@ -7,6 +7,9 @@ export default function AllPosts(props) {
   return (
     <div>
       <h3>This is all posts feed</h3>
+      <Link to='/posts/new'>
+        Add an activity!
+        </Link>
       {
         posts.map((post) => (
           <p key={post.id}>
