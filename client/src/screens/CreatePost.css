@@ -1,0 +1,51 @@
+.create-form {
+  display: flex;
+  flex-direction: column;;
+}
+
+/* .title-tag {
+  display: flex;
+  flex-direction: column;
+}
+.type-tag {
+  display: flex;
+  flex-direction: column;
+}
+.distance-tag {
+  display: flex;
+  flex-direction: column;
+}
+.elevation-tag {
+  display: flex;
+  flex-direction: column;
+}
+.duration-tag {
+  display: flex;
+  flex-direction: column;
+}
+.pic-tag {
+  display: flex;
+  flex-direction: column;
+} */
+label {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: 500;
+}
+input {
+  width: 60vw;
+  height: 30px;
+  align-self: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+input[type='text'] {
+  font-family: 'Khand', sans-serif;
+  font-size: 18px;
+}
+
+.submit-button {
+  width: 20vw;
+  align-self: center;
+}

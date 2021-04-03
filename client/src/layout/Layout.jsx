@@ -1,5 +1,6 @@
 import { Link, Route } from 'react-router-dom'
 import AllPosts from '../screens/AllPosts';
+import './Layout.css'
 
 export default function Layout(props) {
   const { posts, currentUser, handleLogout } = props;

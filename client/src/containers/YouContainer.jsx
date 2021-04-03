@@ -29,6 +29,7 @@ export default function YouContainer() {
     ]));
     history.push('/posts');
   }
+  
   const updatePost = async (id, postData) => {
     const updatedPost = await putPost(id, postData);
     setAllPosts(prevState => prevState.map(post => {
