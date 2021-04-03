@@ -46,3 +46,8 @@ User.destroy_all
   user: @hutchski,
   post: @post3
 )
+@comment2 = Comment.create!(
+  content: "Gate 3 is my fave!",
+  user: @stokedog,
+  post: @post1
+)

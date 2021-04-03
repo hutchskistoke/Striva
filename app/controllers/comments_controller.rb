@@ -5,11 +5,13 @@ class CommentsController < ApplicationController
   # GET /comments
   # need to revisit comments routes  
   def index
-    @user = User.find(params[:user_id])
-    @posts = Post.find(params[:post_id])
-    @comments = Comment.where(post_id: @post.id)
-
-    render json: @comments, include: :user, include: :post, status: :ok
+    if params[:post_id] 
+      @post = Post.find(params[:post_id])
+      render json: @post.comments, include: :user, status: :ok
+    else
+      @user= User.all
+      render json: @user, include: :comments
+    end
   end
 
   # GET /comments/1
@@ -26,7 +28,7 @@ class CommentsController < ApplicationController
     @comment.user = @current_user
 
     if @comment.save
-      render json: @comment, status: :created, location: @comment
+      render json: @comment, include: :user, status: :created
     else
       render json: @comment.errors, status: :unprocessable_entity
     end

@@ -2,17 +2,20 @@ import { useState, useEffect } from 'react';
 import { Switch, Route, Link, useHistory } from 'react-router-dom';
 
 // import services stuffs
-import {getAllPosts, postPost, putPost, destroyPost} from '../services/posts'
+import { getAllPosts, postPost, putPost, destroyPost } from '../services/posts'
+import {getAllComments} from '../services/comments'
 
 // import screens
 import AllPosts from '../screens/AllPosts';
 import PostDetail from '../screens/PostDetail'
 import CreatePost from '../screens/CreatePost'
 import EditPost from '../screens/EditPost'
+import Home from '../screens/Home'
 
-export default function FeedContainer() {
+export default function FeedContainer(props) {
   const [posts, setPosts] = useState([]);
   const history = useHistory();
+  const {currentUser} = props
 
   useEffect(() => {
     const fetchPosts = async () => {
@@ -59,11 +62,16 @@ export default function FeedContainer() {
         <PostDetail
           handleDelete={handleDelete}
           posts={posts}
+          currentUser={currentUser}
+        />
+      </Route>
+      <Route path='/posts'>
+        <AllPosts
+          posts={posts}
         />
       </Route>
       <Route path='/'>
-        <AllPosts
-          posts={posts}
+        <Home
         />
       </Route>
 

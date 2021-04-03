@@ -13,22 +13,31 @@ function App() {
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory()
 
+  useEffect(() => {
+    const handleVerify = async () => {
+      const userData = await verifyUser();
+      setCurrentUser(userData);
+    }
+    handleVerify();
+  }, [])
+
   const handleLogin = async (formData) => {
     const userData = await loginUser(formData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/posts');
   }
 
   const handleRegister = async (formData) => {
     const userData = await registerUser(formData);
     setCurrentUser(userData);
-    history.push('/');
+    history.push('/posts');
   }
 
   const handleLogout = () => {
     setCurrentUser(null);
     localStorage.removeItem('authToken');
     removeToken();
+    history.push('/')
   }
 
   return (
@@ -48,9 +57,16 @@ function App() {
               handleRegister={handleRegister}
             />
           </Route>
-          <Route path='/' component={FeedContainer} />
-          {/* <Route path='/dogs' component={YouContainer} /> */}
-          {/* <Route path='/' component={Home} /> */}
+          <Route path='/myposts'>
+            <YouContainer
+              currentUser={currentUser}
+            />
+          </Route>
+          <Route path='/'>
+            <FeedContainer
+              currentUser={currentUser}  
+            />
+          </Route>
         </Switch>
       </Layout>
     </div>

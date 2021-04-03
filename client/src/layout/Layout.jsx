@@ -7,17 +7,18 @@ export default function Layout(props) {
   return (
     <div>
       <header>
-        <Link to='/'><h1>Striva</h1></Link>
         {
           currentUser ?(
             <>
-              <p>{currentUser.username}</p>
+              
               <button onClick={handleLogout}>Logout</button>
+              <Link to='/myposts'><p>{currentUser.username}'s Activities</p></Link>
             </>
           ) : (
               <div>
               <Link to='/login'>Login</Link>
               <Link to='/register'>Register</Link>
+        
               </div>
             )
         }

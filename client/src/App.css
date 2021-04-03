@@ -6,3 +6,16 @@
 img {
   max-width:400px;
 }
+
+
+@media (min-width: 375px) {
+body {
+    /* background-color: red; */
+}
+input {
+  max-width: 200px;
+}
+.submit-button {
+  max-width: 100px;
+}
+}

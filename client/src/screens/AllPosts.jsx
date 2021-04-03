@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import PostDetail from './PostDetail'
 
 export default function AllPosts(props) {
   const { posts } = props

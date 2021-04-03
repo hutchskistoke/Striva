@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Switch, useHistory } from 'react-router-dom';
-import { getUsersPosts, destroyPost, putPost, postPost } from '../services/posts';
+import { getAllPosts, destroyPost, putPost, postPost } from '../services/posts';
 
-import YourPosts from '../screens/AllPosts'
+import YourPosts from '../screens/YourPosts'
 import CreatePost from '../screens/CreatePost'
 import EditPost from '../screens/EditPost'
 import PostDetail from '../screens/PostDetail'
 
 
-export default function YouContainer() {
+export default function YouContainer(props) {
   const [allPosts, setAllPosts] = useState([]);
   const history = useHistory();
+  const {currentUser} = props
 
-  // useEffect(() => {
-  //   fetchYourPosts();
-  // }, [])
-
-  // const fetchYourPosts = async () => {
-  //   const posts = await getUsersPosts();
-  //   setAllPosts(posts);
-  // }
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const postData = await getAllPosts();
+      setAllPosts(postData);  
+    }
+    fetchPosts();
+  }, [])
 
   const createPost = async (postData) => {
     const newPost = await postPost(postData);
@@ -66,9 +66,10 @@ export default function YouContainer() {
             removePost={removePost}
           />
         </Route>
-        <Route path='/posts'>
+        <Route path='/myposts'>
           <YourPosts
             allPosts={allPosts}
+            currentUser={currentUser}
           />
         </Route>
       </Switch>
