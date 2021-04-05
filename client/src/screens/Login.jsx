@@ -24,7 +24,7 @@ export default function Login(props) {
         e.preventDefault();
         handleLogin(formData);
       }}>
-        <h3 className="login-header">Login</h3>
+        <h3 className="login-header">login</h3>
         <label>
           Username:
           <input
