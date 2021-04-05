@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 import './Register.css'
 
 export default function Register(props) {
@@ -68,7 +69,9 @@ export default function Register(props) {
         <br />
         <button>Submit</button>
       </form>
-      <img src='https://i.imgur.com/SMm2x8l.png' />
+      <Link to='./'>
+        <img src='https://i.imgur.com/SMm2x8l.png' />
+      </Link>
     </div>
   )
 }

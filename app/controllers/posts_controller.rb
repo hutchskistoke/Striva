@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     # @user = User.find(params[:user_id])
     @posts = Post.all
 
-    render json: @posts, include: :comments, status: :ok
+    render json: @posts, include: [:comments, :user], status: :ok
   end
 
   def index_user

@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div>
       <div className="home-header">
-        <Link to='/login' className="home-login">Login</Link>
+        <Link to='/login' className="home-login">login</Link>
         <div className="line">|</div>
-        <Link to='/register' className="home-register">Register</Link>
+        <Link to='/register' className="home-register">register</Link>
       </div>
       
       <div className="home-container">

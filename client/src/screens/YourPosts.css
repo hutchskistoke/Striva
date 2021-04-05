@@ -1,0 +1,17 @@
+.you-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.your-header {
+  display: flex;
+  font-size: 2em;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.you-you {
+  border-bottom: 6px solid rgb(25, 130, 192);
+}

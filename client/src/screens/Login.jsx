@@ -45,10 +45,13 @@ export default function Login(props) {
           />
         </label>
         <br />
-        <Link to='/register'>Register</Link>
+        <Link to='/register'>Don't have an account? Click here to Register</Link>
+        <br />
         <button>Submit</button>
       </form>
-      <img src='https://i.imgur.com/SMm2x8l.png' />
+      <Link to='./'>
+        <img src='https://i.imgur.com/SMm2x8l.png' />
+      </Link>
     </div>
   )
 }

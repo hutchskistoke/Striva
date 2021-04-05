@@ -1,0 +1,64 @@
+
+.all-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.all-header {
+  display: flex;
+  font-size: 2em;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.feed {
+  border-bottom: 6px solid rgb(25, 130, 192);
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-header {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid black;
+  padding-top: 10px;
+}
+
+.user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.details-body {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 1px solid black;
+}
+
+.activity-pic {
+  width: 100vw;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.type {
+  align-self: center;
+}
+
+.comment-link {
+  display: flex;
+  align-content: flex-start;
+  padding-left: 10px;
+}

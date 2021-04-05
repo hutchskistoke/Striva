@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom'
-import {getAllComments, postComment} from '../services/comments'
+import { getAllComments, postComment } from '../services/comments'
+import './PostDetail.css'
 
 export default function PostDetail(props) {
   const [post, setPost] = useState(null);
@@ -12,7 +13,7 @@ export default function PostDetail(props) {
   const { posts, handleDelete, currentUser } = props;
   const { id } = useParams();
 
-  console.log(post)
+
 
   useEffect(() => {
     if (posts.length) {
@@ -45,16 +46,36 @@ export default function PostDetail(props) {
   return (
 
     <div className="post-details">
-      <h1>Activity</h1>
+      <div className='details-header'>
+        <Link to='/posts'><img
+          src='https://i.imgur.com/OC80Awf.png'
+          alt='back'
+          className='back-button' />
+        </Link>
+        <div>activity details</div>
+      </div>
         {
           post &&
-          <div className="card">
-            <h3>{post.title}</h3>
-            <p>{post.activity_type}</p>
-            <p>{post.distance}</p>
-            <p>{post.elevation_gain}</p>
-            <p>{post.duration}</p>
-          <img src={post.activity_photo} alt={post.title} />
+        <div className="card">
+          <div className='user-info-details'>
+            <div><img src={post.user.user_photo} alt='user photo'className='user-pic'/></div>
+          </div>
+          <div className='name-title-stack'>
+            <div className='username-details'>{post.user.username}</div>
+            <div className='title-details'>{post.title}</div>
+          </div>
+          <div className='type-details'>
+            <div>{post.activity_type}</div>
+          </div>
+          <div className='body-details'>
+            <div>{post.distance}</div>
+            <div>{post.elevation_gain}</div>
+            <div>{post.duration}</div>
+            <div><img src={post.activity_photo}
+            alt={post.title}
+            className='detail-img' />
+            </div>
+          </div>
           <div>
             {comments.map((comment, index) => (
               <div key={index}>
@@ -64,12 +85,12 @@ export default function PostDetail(props) {
             ))}
           </div>
           <br></br>
-          <Link to='/posts'>Back</Link>
+          
           {currentUser.id === post.user_id ?
             (
               <>
-                <Link to={`/posts/${post.id}/edit`}><button>Edit</button></Link>
-                <button onClick={() => handleDelete(post.id)}>Delete</button>
+                <Link to={`/posts/${post.id}/edit`}><img src='https://i.imgur.com/Z3J7OOr.png' alt='edit'/></Link>
+                <img src='https://i.imgur.com/7CEFHCZ.png' alt='delete' onClick={() => handleDelete(post.id)}/>
               </>) : (
               <> 
               </>)

@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './YourPosts.css'
 
 export default function YourPosts(props) {
   const {allPosts, currentUser } = props
 
   return (
-    <div>
-      <h3>This is YOUR posts feed</h3>
-      <Link to='/posts/new'>
-        Add an activity!
-        </Link>
+    <div className="you-container">
+      <div className="your-header">
+        <Link to='/posts' className="you-feed">feed</Link>
+        <>|</>
+        <Link to='/myposts' className="you-you">you</Link>
+      </div>
+      
         {currentUser &&
       allPosts
         .filter((post) => {
@@ -18,14 +21,17 @@ export default function YourPosts(props) {
         .map((post) => (
           <>
             <Link to={`/posts/${post.id}`}> 
-              {post.title}
-              {/* {post.activity_type}
-              {post.distance}
-              {post.elevation_gain}
-              {post.duration}  */}
+              <div className='title'>{post.title}</div>
+              <div className='type'>{post.activity_type}</div>
+              <div>{post.distance}</div>
+              <div>{post.elevation_gain}</div>
+              <div>{post.duration}</div>
             </Link>
           </>
         ))}
+      <Link to='/posts/new'>
+        <img src="https://i.imgur.com/hRrqrit.png" alt="add icon"/>
+      </Link>
     </div>
   )
 }
