@@ -1,0 +1,41 @@
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-header {
+  display: flex;
+  font-size: 2em;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  border-bottom: 6px solid rgb(25, 130, 192);
+  font-weight: bold;
+}
+
+.line {
+  padding-left: 15px;
+}
+
+.def-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  border: 1px solid black;
+  padding: 15px;
+}
+
+.def-title{
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.def-verb {
+  opacity: .5;
+  padding-bottom: 15px;
+  font-style: italic;
+}
+

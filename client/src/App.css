@@ -7,6 +7,13 @@ img {
   max-width:400px;
 }
 
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+
 
 @media (min-width: 375px) {
 body {

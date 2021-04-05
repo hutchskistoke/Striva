@@ -42,10 +42,10 @@ function App() {
 
   return (
     <div className="App">
-      <Layout
+      {/* <Layout
         currentUser={currentUser}
         handleLogout={handleLogout}
-      >
+      > */}
         <Switch>
           <Route path='/login'>
             <Login
@@ -68,7 +68,7 @@ function App() {
             />
           </Route>
         </Switch>
-      </Layout>
+      {/* </Layout> */}
     </div>
   );
 }
