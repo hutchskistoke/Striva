@@ -1,3 +1,9 @@
+
+.post-details {
+  display: flex;
+  flex-direction: column;
+}
+
 .details-header {
   display: flex;
   font-size: 2em;
@@ -7,14 +13,57 @@
   border-bottom: 6px solid rgb(25, 130, 192);
 }
 
+.deets-title {
+  padding-left: 70px;
+}
+.user-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.detail-pic-container{
+  width: 100vw;
+}
 .detail-img {
   width: 100vw;
 }
 
-.back-button {
+.type-details {
+  align-self: center;
+}
 
+.info-header {
+  display: flex;
+  justify-content: space-between;
+}
+.user-pic {
+  margin-left: 20px;
+}
+.name-title-stack-details {
+  margin-left: -175px;
+}
+
+.username-details {
+  font-weight: bold;
+}
+
+.type-details {
+  justify-self: right;
+  padding-right: 40px;
+}
+
+.back-button {
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
 .card {
   display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.delete-button {
+  width: 32px;
 }

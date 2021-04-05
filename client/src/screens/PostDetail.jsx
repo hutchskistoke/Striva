@@ -52,30 +52,44 @@ export default function PostDetail(props) {
           alt='back'
           className='back-button' />
         </Link>
-        <div>activity details</div>
+        <div className='deets-title'>activity details</div>
       </div>
         {
           post &&
         <div className="card">
-          <div className='user-info-details'>
-            <div><img src={post.user.user_photo} alt='user photo'className='user-pic'/></div>
+          <div className='info-header'>
+            <div className='user-info-details'>
+              <div><img src={post.user.user_photo}
+                alt='user photo' className='user-pic' /></div>
+            </div>
+            <div className='name-title-stack-details'>
+              <div className='username-details'>{post.user.username}</div>
+              <div className='title-details'>{post.title}</div>
+            </div>
+            <div className='type-details'>
+              <div>{post.activity_type}</div>
+            </div>
           </div>
-          <div className='name-title-stack'>
-            <div className='username-details'>{post.user.username}</div>
-            <div className='title-details'>{post.title}</div>
-          </div>
-          <div className='type-details'>
-            <div>{post.activity_type}</div>
-          </div>
+
           <div className='body-details'>
             <div>{post.distance}</div>
             <div>{post.elevation_gain}</div>
             <div>{post.duration}</div>
-            <div><img src={post.activity_photo}
-            alt={post.title}
-            className='detail-img' />
+            <div className='detail-pic-container'>
+              <img src={post.activity_photo}
+                alt={post.title}
+                className='detail-img' />
             </div>
           </div>
+            {currentUser.id === post.user_id ?
+              (
+                <>
+                  <Link to={`/posts/${post.id}/edit`}><img src='https://i.imgur.com/Z3J7OOr.png' alt='edit'/></Link>
+                  <img src='https://i.imgur.com/7CEFHCZ.png' alt='delete' onClick={() => handleDelete(post.id)} className='delete-button'/>
+                </>) : (
+                <> 
+                </>)
+                  }
           <div>
             {comments.map((comment, index) => (
               <div key={index}>
@@ -86,15 +100,6 @@ export default function PostDetail(props) {
           </div>
           <br></br>
           
-          {currentUser.id === post.user_id ?
-            (
-              <>
-                <Link to={`/posts/${post.id}/edit`}><img src='https://i.imgur.com/Z3J7OOr.png' alt='edit'/></Link>
-                <img src='https://i.imgur.com/7CEFHCZ.png' alt='delete' onClick={() => handleDelete(post.id)}/>
-              </>) : (
-              <> 
-              </>)
-                }
           <form className="create-form"
             onSubmit={(e) => {
             e.preventDefault();

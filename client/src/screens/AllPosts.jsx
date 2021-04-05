@@ -16,9 +16,9 @@ export default function AllPosts(props) {
         posts.map((post) => (
           <div key={post.id}>
             <Link to={`/posts/${post.id}`}>
-              <div className='details-header'>
+              <div className='details-header-feed'>
                 <div className='user-info'>
-                  <div><img src={post.user.user_photo} alt='user photo'className='user-pic'/></div>
+                  <div><img src={post.user.user_photo} alt='user photo'className='user-pic-all'/></div>
                 </div>
                 <div className='name-title-stack'>
                   <div className='username'>{post.user.username}</div>
@@ -34,7 +34,7 @@ export default function AllPosts(props) {
                 <div className='details-duration'>{post.duration}</div>
               </div>
               <div >
-                <img src={post.activity_photo} alt={post.title}className='activity-pic'/>
+                <img src={post.activity_photo} alt={post.title} className='activity-pic'/>
               </div>
             </Link>
             <div className='comment-link'>
