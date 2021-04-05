@@ -20,6 +20,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  margin-left: 20px;
 }
 
 .detail-pic-container{
@@ -36,12 +37,11 @@
 .info-header {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 7px;
 }
-.user-pic {
-  margin-left: 20px;
-}
+
 .name-title-stack-details {
-  margin-left: -175px;
+  margin-left: -150px;
 }
 
 .username-details {
@@ -64,6 +64,26 @@
   padding-top: 20px;
 }
 
+.body-details {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid black;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+
+.icons-container{
+  display: flex; 
+  align-items: left;
+}
+.edit-button {
+  width:32px;
+  padding: 7px;
+  padding-left:10px;
+}
 .delete-button {
   width: 32px;
+  height: 32px;
+  padding: 7px;
 }

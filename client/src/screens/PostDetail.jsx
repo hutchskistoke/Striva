@@ -75,21 +75,23 @@ export default function PostDetail(props) {
             <div>{post.distance}</div>
             <div>{post.elevation_gain}</div>
             <div>{post.duration}</div>
-            <div className='detail-pic-container'>
-              <img src={post.activity_photo}
-                alt={post.title}
-                className='detail-img' />
-            </div>
           </div>
+          <div className='detail-pic-container'>
+            <img src={post.activity_photo}
+              alt={post.title}
+              className='detail-img' />
+          </div>
+          <div className='icons-container'>
             {currentUser.id === post.user_id ?
               (
                 <>
-                  <Link to={`/posts/${post.id}/edit`}><img src='https://i.imgur.com/Z3J7OOr.png' alt='edit'/></Link>
+                  <Link to={`/posts/${post.id}/edit`}><img src='https://i.imgur.com/Z3J7OOr.png' alt='edit'className='edit-button'/></Link>
                   <img src='https://i.imgur.com/7CEFHCZ.png' alt='delete' onClick={() => handleDelete(post.id)} className='delete-button'/>
                 </>) : (
                 <> 
                 </>)
-                  }
+            }
+          </div>
           <div>
             {comments.map((comment, index) => (
               <div key={index}>
