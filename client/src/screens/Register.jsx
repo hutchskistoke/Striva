@@ -9,7 +9,7 @@ export default function Register(props) {
     passwordConfirm: '',
     userPhoto: ''
   })
-  const { username, password, passwordConfirm, userPhoto } = formData;
+  const { username, password, userPhoto } = formData;
   const { handleRegister } = props;
 
   const handleChange = (e) => {
@@ -70,7 +70,7 @@ export default function Register(props) {
         <button>Submit</button>
       </form>
       <Link to='./'>
-        <img src='https://i.imgur.com/SMm2x8l.png' />
+        <img src='https://i.imgur.com/SMm2x8l.png' alt='home'/>
       </Link>
     </div>
   )

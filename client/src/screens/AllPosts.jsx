@@ -18,7 +18,7 @@ export default function AllPosts(props) {
             <Link to={`/posts/${post.id}`}>
               <div className='details-header-feed'>
                 <div className='user-info'>
-                  <div><img src={post.user.user_photo} alt='user photo'className='user-pic-all'/></div>
+                  <div><img src={post.user.user_photo} alt='user'className='user-pic-all'/></div>
                 </div>
                 <div className='name-title-stack'>
                   <div className='username'>{post.user.username}</div>

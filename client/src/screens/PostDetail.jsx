@@ -60,7 +60,7 @@ export default function PostDetail(props) {
           <div className='info-header'>
             <div className='user-info-details'>
               <div><img src={post.user.user_photo}
-                alt='user photo' className='user-pic' /></div>
+                alt='user' className='user-pic' /></div>
             </div>
             <div className='name-title-stack-details'>
               <div className='username-details'>{post.user.username}</div>
