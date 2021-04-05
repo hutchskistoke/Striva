@@ -1,0 +1,10 @@
+.register-header {
+  display: flex;
+  font-size: 2em;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 6px solid rgb(25, 130, 192);
+  font-weight: bold;
+}
+
