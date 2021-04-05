@@ -12,7 +12,7 @@ export default function Home() {
       </div>
       
       <div className="home-container">
-        <img src='https://i.imgur.com/SMm2x8l.png' />
+        <img src='https://i.imgur.com/SMm2x8l.png' alt='logo'/>
         <div className="def-container">
           <div className="def-title">/strīvə/</div>
           <div className="def-verb">verb</div>

@@ -92,16 +92,6 @@ export default function PostDetail(props) {
                 </>)
             }
           </div>
-          <div>
-            {comments.map((comment, index) => (
-              <div key={index}>
-                <div>{comment.user.username}: {comment.content}</div>
-                {/* <div>{comment.user.user_photo}</div> */}
-          </div>
-            ))}
-          </div>
-          <br></br>
-          
           <form className="create-form"
             onSubmit={(e) => {
             e.preventDefault();
@@ -118,8 +108,19 @@ export default function PostDetail(props) {
               />
               
             </label>
-            <button className="submit-button">Submit</button>
+            <button className="submit-button-comment">Submit</button>
           </form>
+          <div>
+            {comments.map((comment, index) => (
+              <div key={index}>
+                <div>{comment.user.username}: {comment.content}</div>
+                {/* <div>{comment.user.user_photo}</div> */}
+          </div>
+            ))}
+          </div>
+
+          
+
           </div>
         }
       </div>

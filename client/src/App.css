@@ -3,9 +3,11 @@
   font-family: 'Khand', sans-serif;
 }
 
-/* img {
-  max-width: 375px;
-} */
+button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: none;
+}
 
 a {
   text-decoration: none;

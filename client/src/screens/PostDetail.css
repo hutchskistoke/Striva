@@ -40,10 +40,6 @@
   padding-bottom: 7px;
 }
 
-.name-title-stack-details {
-  margin-left: -150px;
-}
-
 .username-details {
   font-weight: bold;
 }
@@ -72,7 +68,6 @@
   padding-bottom: 7px;
 }
 
-
 .icons-container{
   display: flex; 
   align-items: left;
@@ -86,4 +81,10 @@
   width: 32px;
   height: 32px;
   padding: 7px;
+}
+
+.submit-button-comment {
+  width: 80px;
+  align-self: center;
+  margin-bottom: 10px;
 }

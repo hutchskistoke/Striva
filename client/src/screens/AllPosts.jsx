@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './AllPosts.css'
 
@@ -36,10 +36,10 @@ export default function AllPosts(props) {
               <div >
                 <img src={post.activity_photo} alt={post.title} className='activity-pic'/>
               </div>
-            </Link>
             <div className='comment-link'>
-            <Link to='/posts/:id'><img src='https://i.imgur.com/EWUund5.png' alt='comment'/></Link>
+              <img src='https://i.imgur.com/EWUund5.png' alt='comment'/>
             </div>
+            </Link>
           </div>
         ))
         }

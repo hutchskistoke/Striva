@@ -47,7 +47,7 @@ export default function Register(props) {
           />
         </label>
         <br />
-        <label>
+        {/* <label>
           Confirm Password:
           <input
             type='password'
@@ -56,7 +56,7 @@ export default function Register(props) {
             onChange={handleChange}
           />
         </label>
-        <br />
+        <br /> */}
         <label>
           Photo:
           <input

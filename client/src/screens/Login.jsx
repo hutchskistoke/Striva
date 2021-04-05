@@ -45,9 +45,9 @@ export default function Login(props) {
           />
         </label>
         <br />
-        <Link to='/register'>Don't have an account? Click here to Register</Link>
+        <button className='sign-in-button'>Submit</button>
         <br />
-        <button>Submit</button>
+        <Link to='/register'>Don't have an account? <br></br>Click here to Register</Link>
       </form>
       <Link to='./'>
         <img src='https://i.imgur.com/SMm2x8l.png' />

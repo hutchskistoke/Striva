@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Switch, Route, Link, useHistory } from 'react-router-dom';
+import { Switch, Route, useHistory } from 'react-router-dom';
 
 // import services stuffs
 import { getAllPosts, postPost, putPost, destroyPost } from '../services/posts'
-import {getAllComments} from '../services/comments'
 
 // import screens
 import AllPosts from '../screens/AllPosts';
@@ -24,7 +23,6 @@ export default function FeedContainer(props) {
     }
     fetchPosts();
   }, [])
-  console.log(posts)
 
   const handleCreate = async (postData) => {
     const newPost = await postPost(postData);
