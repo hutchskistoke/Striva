@@ -31,7 +31,7 @@
 .details-header-feed {
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid black;
+  /* border-top: 1px solid black; */
   padding-top: 10px;
 }
 
@@ -71,9 +71,9 @@
 
 
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .activity-pic {
-    width: 70vw;
+    width: 50vw;
   }
 }
 

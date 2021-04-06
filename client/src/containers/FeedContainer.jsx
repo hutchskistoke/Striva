@@ -47,12 +47,6 @@ export default function FeedContainer(props) {
     history.push('/posts');
   }
 
-  // const handleLogout = () => {
-  //   setCurrentUser(null);
-  //   localStorage.removeItem('authToken');
-  //   removeToken();
-  //   history.push('/')
-  // }
 
   return (
     <Switch>

@@ -90,7 +90,7 @@
   margin-bottom: 10px;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 376px) {
   .detail-img {
     width: 70vw;
   }

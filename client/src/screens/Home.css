@@ -22,8 +22,8 @@
   flex-direction: column;
   text-align: left;
   margin-top: 40px;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  /* margin-left: 20vw;
+  margin-right: 20vw; */
   border: 1px solid black;
   padding: 15px;
 }
