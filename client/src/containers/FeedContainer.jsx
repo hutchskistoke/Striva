@@ -12,6 +12,7 @@ import EditPost from '../screens/EditPost'
 import Home from '../screens/Home'
 
 export default function FeedContainer(props) {
+  // const [currentUser, setCurrentUser] = useState(null);
   const [posts, setPosts] = useState([]);
   const history = useHistory();
   const {currentUser} = props
@@ -46,6 +47,13 @@ export default function FeedContainer(props) {
     history.push('/posts');
   }
 
+  // const handleLogout = () => {
+  //   setCurrentUser(null);
+  //   localStorage.removeItem('authToken');
+  //   removeToken();
+  //   history.push('/')
+  // }
+
   return (
     <Switch>
       <Route path='/posts/new'>
@@ -75,6 +83,9 @@ export default function FeedContainer(props) {
         <Home
         />
       </Route>
+      {/* <Footer
+        handleLogout={handleLogout}
+      /> */}
 
     </Switch>
   )

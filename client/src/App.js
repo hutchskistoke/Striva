@@ -1,12 +1,13 @@
 
 import './App.css';
+import Footer from './layout/Footer'
 import Login from './screens/Login';
 import Register from './screens/Register';
 import FeedContainer from './containers/FeedContainer';
 import YouContainer from './containers/YouContainer';
 import { Switch, Route, useHistory } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { loginUser, registerUser, verifyUser } from './services/auth';
+import { loginUser, registerUser, verifyUser, removeToken } from './services/auth';
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -32,12 +33,12 @@ function App() {
     history.push('/posts');
   }
 
-  // const handleLogout = () => {
-  //   setCurrentUser(null);
-  //   localStorage.removeItem('authToken');
-  //   removeToken();
-  //   history.push('/')
-  // }
+  const handleLogout = () => {
+    setCurrentUser(null);
+    localStorage.removeItem('authToken');
+    removeToken();
+    history.push('/')
+  }
 
   return (
     <div className="App">
@@ -66,6 +67,10 @@ function App() {
               currentUser={currentUser}  
             />
           </Route>
+        <Footer
+          currentUser={currentUser}
+          handleLogout={handleLogout}
+          />
         </Switch>
       {/* </Layout> */}
     </div>

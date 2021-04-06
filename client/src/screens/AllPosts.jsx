@@ -1,9 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './AllPosts.css'
+import Footer from '../layout/Footer'
 
 export default function AllPosts(props) {
   const { posts } = props
+
+
   return (
     <div className="all-container">
       <div className="all-header">
@@ -44,9 +47,7 @@ export default function AllPosts(props) {
         ))
         }
       </div>
-      <Link to='/posts/new' className='add-on-feed'>
-      <img src="https://i.imgur.com/hRrqrit.png" alt="add icon"/>
-      </Link>
+      <Footer />
     </div>
   )
 }

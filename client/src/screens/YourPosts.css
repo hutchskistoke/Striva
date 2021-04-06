@@ -14,4 +14,10 @@
 
 .you-you {
   border-bottom: 6px solid rgb(25, 130, 192);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.you-feed {
+  padding-left: 40px;
+  padding-right: 40px;
 }
