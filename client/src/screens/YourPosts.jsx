@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './YourPosts.css'
+import Footer from '../layout/Footer'
 
 export default function YourPosts(props) {
   const {allPosts, currentUser } = props
@@ -44,9 +45,7 @@ export default function YourPosts(props) {
             </Link>
           </div>
         ))}
-      <Link to='/posts/new'>
-        <img src="https://i.imgur.com/hRrqrit.png" alt="add icon"/>
-      </Link>
+      <Footer/>
     </div>
   )
 }

@@ -21,7 +21,9 @@ a:visited {
 
 @media (min-width: 375px) {
 body {
-    /* background-color: red; */
+    background-color: red;
+    margin-left: 80px;
+    margin-right: 80px;
 }
 input {
   max-width: 200px;
@@ -29,4 +31,20 @@ input {
 .submit-button {
   max-width: 100px;
 }
+}
+
+@media (min-width: 750px) {
+  body {
+    background-color: purple;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
+
+@media (min-width: 950px) {
+  body {
+    background-color: orange;
+    margin-left: 300px;
+    margin-right: 300px;
+  }
 }

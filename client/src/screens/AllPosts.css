@@ -68,3 +68,23 @@
   align-content: flex-start;
   padding-left: 10px;
 }
+
+
+
+@media (min-width: 375px) {
+  .activity-pic {
+    width: 70vw;
+  }
+}
+
+@media (min-width: 750px) {
+  .activity-pic {
+    width: 50vw;
+  }
+}
+
+@media (min-width: 950px) {
+  .activity-pic {
+    width: 38vw;
+  }
+}
