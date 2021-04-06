@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Khand', sans-serif;
+  color: black;
 }
 
 button {
@@ -11,6 +12,7 @@ button {
 
 a {
   text-decoration: none;
+  color: black;
 }
 a:visited {
   color: black;

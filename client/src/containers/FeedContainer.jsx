@@ -21,8 +21,10 @@ export default function FeedContainer(props) {
       const postData = await getAllPosts();
       setPosts(postData);
     }
-    fetchPosts();
-  }, [])
+    if (currentUser) {
+      fetchPosts()
+    };
+  }, [currentUser])
 
   const handleCreate = async (postData) => {
     const newPost = await postPost(postData);
