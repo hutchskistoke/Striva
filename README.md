@@ -1,4 +1,5 @@
 # Striva
+https://awesome-tesla-721338.netlify.app/posts
 
 - [Overview](#overview)
 - [MVP](#mvp)
@@ -110,19 +111,19 @@ src
 
 > Use this section to estimate the time necessary to build out each of the components you've described above.
 
-| Task                | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Rails backend     |    H     |     5 hrs      |      hrs     |     TBD   |
-| Create CRUD Actions |    H     |     6 hrs      |      hrs     |     TBD     |
-| Seed Data     |    H     |     2 hrs      |      hrs     |     TBD   |
-| Migrations and Schema |    H     |     1 hrs      |      hrs     |     TBD     |
-| Create CRUD Actions |    H     |     6 hrs      |      hrs     |     TBD     |
-| Routes   |    H     |     4 hrs      |      hrs     |     TBD   |
-| Services files |    H     |     6 hrs      |      hrs     |     TBD     |
-| Front end CRUD     |    H     |     6 hrs      |      hrs     |     TBD   |
-| Debugging |    H     |     4 hrs      |      hrs     |     TBD     |
-| CSS               |      H    |     12 hrs      |      hrs     |     TBD     |
-| TOTAL               |          |     52 hrs      |      hrs     |     TBD     |
+| Task                | Priority | Estimated Time | Actual Time | 
+| ------------------- | :------: | :------------: | :-----------: | 
+| Rails backend     |    H     |     5 hrs      |      7hrs     |     
+| Create CRUD Actions(BE) |    H     |     6 hrs      |     9 hrs     |     
+| Seed Data     |    H     |     2 hrs      |      2hrs     |     
+| Migrations and Schema |    H     |     1 hrs      |      3hrs     |     
+| Create CRUD Actions(FE) |    H     |     6 hrs      |      7hrs     |     
+| Routes   |    H     |     4 hrs      |      2hrs     |    
+| Services files |    H     |     6 hrs      |      4hrs     |    
+| Front end CRUD edits |    H     |     6 hrs      |      4hrs     |    
+| Debugging |    H     |     4 hrs      |      5hrs     |     
+| CSS               |      H    |     12 hrs      |      12hrs     |     
+| TOTAL               |          |     52 hrs      |      45hrs     |     
 
 
 <br>
