@@ -69,6 +69,10 @@
   padding-bottom: 7px;
 }
 
+.username-comment {
+  font-weight: bold;
+}
+
 .icons-container{
   display: flex; 
   align-items: left;

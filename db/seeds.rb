@@ -11,7 +11,7 @@ Post.destroy_all
 User.destroy_all
 
 @hutchski = User.create!(username: "hutchski", password: "password", user_photo: "https://i.imgur.com/eEETwAK.jpg?1")
-@stokedog = User.create!(username: "stokedog", password: "password", user_photo: "https://i.imgur.com/H7XlWNY.jpg?1")
+@stokedog = User.create!(username: "stokedog", password: "password", user_photo: "https://i.imgur.com/Lj26aoP.jpg?1")
 @talubi = User.create!(username: "talubi", password: "password", user_photo: "https://i.imgur.com/HiLWMsK.jpg?1")
 
 @post1 = Post.create!(
@@ -20,7 +20,7 @@ User.destroy_all
     distance: "18mi",
     duration: "4hrs 17m",
     elevation_gain: "19,000ft",
-    activity_photo: "https://i.imgur.com/bxcAoyx.jpg",
+    activity_photo: "https://i.imgur.com/xUZWmes.jpg",
     user: @hutchski
 )
 @post2 = Post.create!(
