@@ -1,5 +1,5 @@
 # Striva
-https://awesome-tesla-721338.netlify.app/posts
+striva.netlify.app
 
 - [Overview](#overview)
 - [MVP](#mvp)
@@ -19,7 +19,7 @@ https://awesome-tesla-721338.netlify.app/posts
 
 ## Overview
 
-_**Striva** is an app striving to be strava, get it? Striva! Social media meets fitness in this app.  Share your activities with friends and see what they've been up to as well!_
+_**Striva** is an app striving to be Strava, get it? Striva! Social media meets fitness in this app.  Share your activities with friends and see what they've been up to as well!_
 
 <br>
 
