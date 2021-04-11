@@ -1,5 +1,5 @@
 # Striva
-striva.netlify.app
+https://striva.netlify.app/
 
 - [Overview](#overview)
 - [MVP](#mvp)
