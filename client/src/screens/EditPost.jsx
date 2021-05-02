@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import './EditPost.css'
 
 export default function PostEdit(props) {
   const [formData, setFormData] = useState({
@@ -45,8 +46,8 @@ export default function PostEdit(props) {
       e.preventDefault();
       handleUpdate(id, formData);
     }}>
-      <h3>Edit Post</h3>
-      <label>
+      <div className='edit-header'>Edit Post</div>
+      <label className='edit-title'>
         Title:
         <input
           type='text'
@@ -101,6 +102,7 @@ export default function PostEdit(props) {
         />
       </label>
       <button className="submit-button">Submit</button>
+      <button className='back-button-edit'>Back</button>
     </form>
   )
 }

@@ -1,0 +1,16 @@
+.edit-header {
+  border-bottom: 6px solid rgb(25, 130, 192);
+  font-size: 2em;
+  padding-top: 15px;
+}
+
+.edit-title {
+  padding-top: 10px;
+}
+
+.back-button-edit {
+  width: 20vw;
+  align-self: center;
+  margin: 5px;
+}
+
