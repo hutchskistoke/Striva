@@ -40,8 +40,17 @@
 }
 
 @media (min-width: 376px) {
+  .home-header {
+    margin-left: 40vw;
+    margin-right: 40vw;
+  }
   .def-container {
       margin-left: 40px;
       margin-right: 40px;
+  }
+  .home-logo {
+    width: 300px;
+    height: 300px;
+    align-self: center;
   }
 }

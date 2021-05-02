@@ -3,6 +3,11 @@
   flex-direction: column;;
 }
 
+.add-title {
+  border-bottom: 6px solid rgb(25, 130, 192);
+  font-size: 2em;
+}
+
 /* .title-tag {
   display: flex;
   flex-direction: column;
